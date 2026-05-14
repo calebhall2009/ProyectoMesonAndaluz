@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+
+<html class="light scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Plus+Jakarta+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface-variant": "#59413d",
+                    "on-tertiary-container": "#ffe5e2",
+                    "on-background": "#1e1c10",
+                    "primary-fixed": "#ffdad5",
+                    "inverse-primary": "#ffb4a9",
+                    "on-error-container": "#93000a",
+                    "surface": "#fff9eb",
+                    "surface-container-highest": "#e9e2d0",
+                    "on-primary": "#ffffff",
+                    "on-primary-fixed": "#410000",
+                    "on-secondary-fixed-variant": "#574500",
+                    "tertiary-container": "#af4a3f",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed-variant": "#80281f",
+                    "error": "#ba1a1a",
+                    "on-surface": "#1e1c10",
+                    "tertiary-fixed-dim": "#ffb4a9",
+                    "on-secondary": "#ffffff",
+                    "surface-bright": "#fff9eb",
+                    "on-secondary-container": "#725b00",
+                    "inverse-on-surface": "#f7f0de",
+                    "on-primary-fixed-variant": "#8e130c",
+                    "secondary-fixed": "#ffe085",
+                    "primary-container": "#c0392b",
+                    "secondary-fixed-dim": "#ecc22c",
+                    "surface-tint": "#b02d21",
+                    "outline-variant": "#e1bfb9",
+                    "primary-fixed-dim": "#ffb4a9",
+                    "secondary-container": "#fed33e",
+                    "surface-container-low": "#faf3e0",
+                    "tertiary": "#8f3329",
+                    "on-error": "#ffffff",
+                    "surface-variant": "#e9e2d0",
+                    "on-tertiary": "#ffffff",
+                    "outline": "#8d706c",
+                    "on-tertiary-fixed": "#410001",
+                    "on-primary-container": "#ffe5e1",
+                    "secondary": "#735c00",
+                    "surface-container": "#f4eedb",
+                    "tertiary-fixed": "#ffdad5",
+                    "surface-container-high": "#efe8d5",
+                    "surface-dim": "#e0dac7",
+                    "error-container": "#ffdad6",
+                    "primary": "#9e2016",
+                    "on-secondary-fixed": "#231b00",
+                    "background": "#fff9eb",
+                    "inverse-surface": "#333024"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "margin-desktop": "64px",
+                    "gutter": "24px",
+                    "container-max": "1280px",
+                    "margin-mobile": "20px"
+            },
+            "fontFamily": {
+                    "label-md": ["Plus Jakarta Sans"],
+                    "headline-md": ["Playfair Display"],
+                    "headline-sm": ["Playfair Display"],
+                    "display-lg": ["Playfair Display"],
+                    "body-md": ["Plus Jakarta Sans"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "display-lg-mobile": ["Playfair Display"]
+            },
+            "fontSize": {
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "display-lg": ["56px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
+    }
+.stucco-texture {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuDFVU9kEV5F3eoy5MjaloSYJ8hpmakUS029YoO5E_FbTvq5f9mwqKlRpNd-_-3HTSNaWJ_aTtWqxdl4_LDZMqGq3THeJBRVqaf29GTI9Z4USvM2-UMU1Un8WS9eNOWfUd7b4s_2cqRvxr3dbCa2XffEeV6OnBh5ZmcMw1Vx5ZYwJVM4d8d-MHTJhIb3Xen1KM10Esd-jJompWwE6_ox1YE-1djrfY3CKPHA2ph8WKin8atNvLK5iesAG21ncI1lydxFs0u7-p-U2wM)
+    }
+.dotted-menu-line {
+    border-bottom: 2px dotted #8d706c;
+    flex-grow: 1;
+    margin: 0 8px;
+    opacity: 0.3
+    }</style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background stucco-texture selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Anchor -->
+<header class="fixed top-0 w-full z-50 backdrop-blur-md shadow-sm shadow-primary/10 bg-surface/95">
+<nav class="flex items-center justify-between px-margin-mobile md:px-margin-desktop h-20 w-full max-w-container-max mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="restaurant">restaurant</span>
+<span class="font-headline-md text-headline-md text-primary tracking-tight">Mesón Andaluz</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#menu">Menú</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#promos">Promociones</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#contact">Ubicación</a>
+</div>
+<a href="https://wa.me/593939206691?text=Hola%2C%20quiero%20hacer%20una%20reserva%20en%20Mes%C3%B3n%20Andaluz%20%F0%9F%8D%BD%EF%B8%8F" target="_blank" class="active:scale-95 transition-transform duration-200 bg-primary text-on-primary px-6 py-2.5 rounded-lg font-label-md text-label-md hover:bg-primary-container shadow-sm">
+                Reservar
+            </a>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-black/40 z-10"></div>
+<img class="w-full h-full object-cover" data-alt="An intimate and luxurious Spanish restaurant interior during the evening. Warm amber lighting casts soft shadows on rustic stone walls and dark wooden tables. The atmosphere is cozy and upscale, with wine glasses glinting under low-hanging decorative lamps. The overall color palette features deep terracotta tones, warm golds, and rich wood textures, creating an inviting and authentic Mediterranean ambiance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCEOiwmmaproyNmoLA5hNURuJoffE_gFUQiAQpMooptJB1qQeyP5KwedPQpDvdHvbYQImE72LRA_gIAq6IMyosAjocPBAshvRZua-ZvBfvl1Md8RvkahauUDXLWZhnI-4L1T7q1LrhuCDLJQB8B-A8B14omuyT-Msd6DstsshpLFu-qdeGwgPyAZVVexVA16ty4WD_7mJ2Kpjyei88jzcMSq6GlL-n2JuTOObnIP1qz28DrbAAbaCmtV9puwgqNLIIxNhu0Z04y9I"/>
+</div>
+<div class="relative z-20 text-center px-margin-mobile max-w-4xl">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-white mb-6 drop-shadow-lg">
+                    Mesón Andaluz
+                </h1>
+<p class="font-body-lg text-body-lg text-white/90 mb-10 max-w-2xl mx-auto leading-relaxed">
+                    Los auténticos sabores de la cocina española en el corazón de Guayaquil.
+                </p>
+<div class="flex flex-col md:flex-row items-center justify-center gap-4">
+<a href="https://wa.me/593939206691?text=Hola%2C%20quiero%20hacer%20una%20reserva%20en%20Mes%C3%B3n%20Andaluz%20%F0%9F%8D%BD%EF%B8%8F" target="_blank" class="w-full md:w-auto bg-primary text-on-primary px-10 py-4 rounded-lg font-label-md text-label-md hover:bg-primary-container transition-all hover:-translate-y-1 shadow-xl text-center">
+                        Reserva tu mesa
+                    </a>
+<a href="#menu" class="w-full md:w-auto bg-transparent border-2 border-secondary-fixed text-secondary-fixed px-10 py-4 rounded-lg font-label-md text-label-md hover:bg-secondary-fixed/10 transition-all shadow-xl backdrop-blur-sm text-center">
+                        Ver menú
+                    </a>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce text-white/60">
+<span class="material-symbols-outlined text-4xl" data-icon="keyboard_double_arrow_down">keyboard_double_arrow_down</span>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-24 md:py-32 px-margin-mobile md:px-margin-desktop bg-surface-container-low">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="absolute -top-4 -left-4 w-24 h-24 bg-secondary-container/20 rounded-full blur-3xl"></div>
+<img class="rounded-xl shadow-2xl relative z-10" data-alt="A beautifully plated traditional Spanish paella in a rustic iron pan, showcasing vibrant yellow saffron rice, fresh prawns, mussels, and scattered green peas. The dish is set on a weathered wooden table in a sun-drenched courtyard, capturing an authentic and organic rustic vibe. Warm natural sunlight highlights the textures of the food and the Mediterranean environment, emphasizing artisanal quality and culinary tradition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWSXCaqIpTv85YWaL3AwqogOm-gRn5Xs4MDXIetAmgK9UdCKt4s-CYCYKPVXhgjLJPD9QYGFXpXTS2MSBmUicEPvzVVOxr-X6fSqQScgpXft0Na46R5P6W0a9uiCTY427RaeylgZ59opht8mP9x6izqD0RAaeMI0O3QmwiE2xBEG6TQTJFwNrPWqfIUEpEO40R1SvZIHuwUJTgFFfFpGi7MdApr6i5aJb7OQ0BP9O5yiRKhvWg4JMR5Kxawk9ON2UXCY7NrbwAhog"/>
+<div class="absolute -bottom-6 -right-6 bg-surface p-6 rounded-lg shadow-xl z-20 border border-outline-variant">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="group" data-weight="fill">group</span>
+<div>
+<p class="font-label-md text-label-md text-primary">Comunidad</p>
+<p class="font-body-md text-body-md font-bold">Más de 5,700 seguidores</p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<span class="font-label-md text-label-md text-primary uppercase tracking-widest mb-4 block">Nuestra Esencia</span>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-6 leading-tight">
+                        Una experiencia española única con vibras rústicas en Urdesa.
+                    </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 leading-relaxed">
+                        En Mesón Andaluz, transportamos a nuestros comensales a las bodegas tradicionales del sur de España. Cada rincón está diseñado para evocar la calidez de un hogar andaluz, donde la buena comida y la compañía se celebran sin prisa. Nuestra pasión es servir autenticidad en cada bocado, utilizando técnicas heredadas y los mejores ingredientes locales e importados.
+                    </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-[1px] bg-outline"></div>
+<span class="italic font-body-md text-body-md text-outline">Tradición en cada plato</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Menu Section (Bento Grid Style) -->
+<section class="py-24 md:py-32 px-margin-mobile md:px-margin-desktop bg-surface" id="menu">
+<div class="max-w-container-max mx-auto text-center mb-16">
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-4">Nuestra Carta</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto">Explora la riqueza culinaria de España a través de nuestras categorías seleccionadas.</p>
+</div>
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Tapas -->
+<div class="group relative overflow-hidden rounded-xl bg-surface-container shadow-sm border border-outline-variant hover:shadow-xl transition-all duration-300 md:col-span-2">
+<div class="p-8 h-full flex flex-col justify-between relative z-10">
+<div>
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="restaurant_menu">restaurant_menu</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Tapas &amp; Entrantes</h3>
+</div>
+<ul class="space-y-4 max-w-md">
+<li class="flex items-end">
+<span class="font-body-lg text-body-lg">Croquetas Caseras</span>
+<div class="dotted-menu-line"></div>
+<span class="font-label-md text-label-md text-primary">$8.50</span>
+</li>
+<li class="flex items-end">
+<span class="font-body-lg text-body-lg">Tortilla de Patatas</span>
+<div class="dotted-menu-line"></div>
+<span class="font-label-md text-label-md text-primary">$7.00</span>
+</li>
+<li class="flex items-end">
+<span class="font-body-lg text-body-lg">Camarones al Ajillo</span>
+<div class="dotted-menu-line"></div>
+<span class="font-label-md text-label-md text-primary">$12.00</span>
+</li>
+</ul>
+</div>
+<button class="mt-8 text-primary font-label-md text-label-md flex items-center gap-2 group-hover:gap-4 transition-all">
+                            Ver todas las tapas <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<img class="absolute top-0 right-0 h-full w-1/3 object-cover opacity-20 group-hover:opacity-40 group-hover:scale-105 transition-all" data-alt="A close-up shot of a variety of Spanish tapas arranged artistically on a stone platter. The focus is on crispy croquetas and a portion of tortilla española, garnished with fresh herbs. The background shows a warm, softly-lit restaurant setting with terracotta tones and textures. High-end food photography with a shallow depth of field and soft natural lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBV0Gmo61-niKz5UJWUigYOCTYZcs-W0gv0ujhGB6TE_S1sSQWmiv3o171FszGngvYDwv2SWTYb-XimUseEiJkQS40_NjItEi6sfHrMDtV7MZMlLfKs8tVvqqqInIP9o_Swgw1dE4MbJcjmRvLaxXEZRYI7hq-7npR2m8ImHzpLB_7Wh7HBXRjVLa91YVpPfNpcp_M-yMWBx2F0YHc3gABE6JpNMqJR0NPbHEzk5CfdqvBp7S6VEmGZVS22rR4TPzxwMc34vfTFULg"/>
+</div>
+<!-- Paellas -->
+<div class="group relative overflow-hidden rounded-xl bg-primary-container text-on-primary-container p-8 shadow-sm transition-all duration-300 hover:shadow-xl flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-secondary-fixed text-4xl" data-icon="skillet" data-weight="fill">skillet</span>
+<h3 class="font-headline-sm text-headline-sm">Paellas &amp; Arroces</h3>
+</div>
+<p class="font-body-md text-body-md opacity-90 mb-6 italic">Nuestra especialidad: Arroz Negro y Paella Sevillana cocinados a fuego lento.</p>
+<ul class="space-y-4">
+<li class="flex justify-between border-b border-on-primary-container/20 pb-2">
+<span>Mar y Tierra</span>
+<span class="font-bold">$22.00</span>
+</li>
+<li class="flex justify-between border-b border-on-primary-container/20 pb-2">
+<span>Paella Sevillana</span>
+<span class="font-bold">$19.50</span>
+</li>
+</ul>
+</div>
+<button class="bg-secondary-container text-on-secondary-container py-3 rounded-lg font-label-md text-label-md mt-6 hover:bg-secondary-fixed transition-colors">
+                        Pedir Paella
+                    </button>
+</div>
+<!-- Categories Grid Mini -->
+<div class="bg-surface-container-high rounded-xl p-6 border border-outline-variant hover:shadow-md transition-all">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary" data-icon="set_meal">set_meal</span>
+<h4 class="font-headline-sm text-headline-sm">Mariscos</h4>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Frutos del Pacífico con alma mediterránea.</p>
+</div>
+<div class="bg-surface-container-high rounded-xl p-6 border border-outline-variant hover:shadow-md transition-all">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary" data-icon="dinner_dining">dinner_dining</span>
+<h4 class="font-headline-sm text-headline-sm">Carnes</h4>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Cortes premium preparados al estilo castellano.</p>
+</div>
+<div class="bg-surface-container-high rounded-xl p-6 border border-outline-variant hover:shadow-md transition-all">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary" data-icon="bakery_dining">bakery_dining</span>
+<h4 class="font-headline-sm text-headline-sm">Postres</h4>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Crema catalana y churros con chocolate real.</p>
+</div>
+</div>
+</section>
+<!-- Promos Section -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface-container-highest" id="promos">
+<div class="max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div>
+<span class="font-label-md text-label-md text-primary uppercase tracking-widest mb-4 block">Ofertas de Temporada</span>
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface">Nuestras Promociones</h2>
+</div>
+<div class="h-[1px] flex-grow bg-outline-variant mx-8 hidden md:block"></div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs italic">Diseñadas para compartir los mejores momentos.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Promo 1 -->
+<div class="bg-surface rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-outline-variant group">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Two people sharing a variety of Spanish tapas and glasses of red wine in a cozy, dimly lit restaurant setting. The scene is intimate and joyful, emphasizing hospitality and the sharing of food. Warm, golden hour light filters through, highlighting the rich colors of the dishes and the textures of the stone walls. Luxurious and authentic Spanish dining atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSXNcfMFtiWeqyboHYSYw0L_q69BqgUlYKxyrqcUJpaOKumSe1a4a3QDyYYyw7kLkgFdZzfoN2FMb-vBdyGq00xCREbZFloo01aAq3kpUNu_FIV4vluGSyvajTKUHc6Gi44FZ6s14loQkuyWjBrDxC14dmBvZfKhGW_ZMhNNpDKoJk-KOqs8XwYXZsS9m7WYQY5W2prNtKlDhpZoPU4j3adOHNwfd1K3S8ELOxjGqB_WiayB3WIrvdF_Wj6whhQGDOCozH8dXHXEE"/>
+</div>
+<div class="p-6">
+<h4 class="font-headline-sm text-headline-sm mb-2">Tapeo para Dos</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Selección de 5 tapas clásicas y dos copas de vino tinto.</p>
+<span class="font-headline-sm text-primary">$32.00</span>
+</div>
+</div>
+<!-- Promo 2 -->
+<div class="bg-surface rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-outline-variant group">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A large, family-sized table filled with various Spanish dishes, including a giant paella, salads, and starters. The setting is a rustic Mediterranean dining room with warm textures and inviting lighting. A diverse range of people are gathered around, suggesting a warm and celebratory family atmosphere. High-end lifestyle photography reflecting the comfort and abundance of a traditional Spanish feast." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9kBM4aqLwn4PHwK85j5T73cIL6ZHhMrQf9lUWUqFOx-N57Ww9kJLAXYhRLCsiffwWyHn4i2BziMyIvy-Smow9b5dKYEvHFCv8xrBJ3SajAdBKs7PHRXtmyf7eftfGdXURTj01vpeJUX1L2t2NDz_x45qi6ovU1CrmuiE4HS47993PupYj-2NdMYZ4TGLPPIhIQhXzCGngu23BIimm1ieJKK0WnqPoF_7Zf6iGuBSnfLhMovSmQYapIG4mx0mTm9EpdkhUvzDNWOU"/>
+</div>
+<div class="p-6">
+<h4 class="font-headline-sm text-headline-sm mb-2">Combo Familiar</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Entrante grande, Paella para 4 y jarra de Sangría artesanal.</p>
+<span class="font-headline-sm text-primary">$65.00</span>
+</div>
+</div>
+<!-- Promo 3 -->
+<div class="bg-surface rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-outline-variant group">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A steaming hot paella pan being served on a rustic table, with three sets of cutlery and wine glasses nearby. The saffron-colored rice is topped with generous portions of seafood and lemon wedges. The lighting is warm and directional, creating high contrast and highlighting the delicious textures of the food. A sophisticated and appetizing presentation of a traditional Spanish staple." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAo0_HT8aF9w2PQO_vr-_W6AzCpmkyFWkpp-q3W7A8L-bs7PNAnpgpsGZd0JLPSQ7DX_aAYOjsBwXeaO_buzdoaH2Lwvc6Z3DN-_JHDX4zGaNtgHqMoAzZD8zYcMdmsLB_QoXyYx-IlRUB2nqAt6kOzSW-ICjv9E9v-65zy-_BGk1ij53Hk4J3MmTVMTk9XIQRsvnxrB3v5LY_N_LeIUVL61dEkGwdvkz38FZ4_t3nYRPJO4rHzpnctQXI8GSeAFpnXV_HMnWeeSQQ"/>
+</div>
+<div class="p-6">
+<h4 class="font-headline-sm text-headline-sm mb-2">Paella para 3</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Paella Sevillana o Mixta para tres personas con postre incluido.</p>
+<span class="font-headline-sm text-primary">$48.00</span>
+</div>
+</div>
+<!-- Promo 4 (Recomendado) -->
+<div class="bg-primary-container text-on-primary-container rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-primary group relative">
+<div class="absolute top-4 right-4 bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-tighter z-10">Recomendado</div>
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-80" data-alt="An exquisite selection of gourmet Spanish tapas featuring premium ingredients like jamón ibérico, manchego cheese, and olive oils. The presentation is elegant and minimalist on a dark ceramic platter, set against a background of warm stone and subtle gold accents. The atmosphere is sophisticated and high-end, focusing on the refined quality of the ingredients." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrHA013FXSqIicfrAlrzbIwCQRZr19vH60BVbefolWTqR_Z6Ujsvjw7NHCF7exeCs2HemRLMQHO5wYQXsAjFKZBgDBUTa7fzVg5wFbQcgLv1hVOebVQnmx5noVY4LoiOYUXa_WIvA8wSOEWx3rKoncwXmzOTHHqJq4zAzbBd9iZkXwF_DI7rDLOyoopXdacO8MdeI7sbK_5jBrqXZcEFZ-yBD-DNBxnApnkBt93LQJZhbd82xLurGAmFj9sQq0n_F2KTMDQYs4Mco"/>
+</div>
+<div class="p-6">
+<h4 class="font-headline-sm text-headline-sm mb-2">Tapeo Gourmet</h4>
+<p class="font-body-md text-body-md opacity-90 mb-4">Nuestra selección premium de quesos, jamones y delicias del chef.</p>
+<span class="font-headline-sm text-secondary-fixed">$45.00</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-24 md:py-32 bg-surface">
+<div class="max-w-container-max mx-auto px-margin-mobile">
+<div class="text-center mb-16">
+<span class="material-symbols-outlined text-primary text-5xl mb-4" data-icon="format_quote" data-weight="fill">format_quote</span>
+<h2 class="font-headline-md text-headline-md">Historias de nuestros comensales</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="bg-surface-container-low p-10 rounded-xl border-l-4 border-primary relative">
+<div class="flex gap-1 mb-6 text-secondary">
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill">star</span>
+</div>
+<p class="font-body-lg text-body-lg italic mb-6 leading-relaxed">"La paella es simplemente espectacular, el punto del arroz y la frescura de los mariscos es insuperable en Guayaquil. El ambiente te hace sentir en una verdadera bodega de Sevilla."</p>
+<div>
+<p class="font-label-md text-label-md font-bold">Ricardo G.</p>
+<p class="font-label-md text-label-md text-on-surface-variant">Cliente Frecuente</p>
+</div>
+</div>
+<div class="bg-surface-container-low p-10 rounded-xl border-l-4 border-primary">
+<div class="flex gap-1 mb-6 text-secondary">
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill">star</span>
+</div>
+<p class="font-body-lg text-body-lg italic mb-6 leading-relaxed">"Recomiendo totalmente el lomo al roquefort. La atención es impecable y los vinos están a la temperatura perfecta. Una joya en Urdesa."</p>
+<div>
+<p class="font-label-md text-label-md font-bold">María José F.</p>
+<p class="font-label-md text-label-md text-on-surface-variant">Guía Local</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-24 md:py-32 px-margin-mobile md:px-margin-desktop bg-surface-container-low" id="contact">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
+<div>
+<h2 class="font-headline-md text-headline-md mb-8">Encuéntranos</h2>
+<div class="space-y-8">
+<div class="flex gap-6">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-primary mb-1">Dirección</p>
+<p class="font-body-md text-body-md">Av. Las Monjas #131 y Víctor Emilio Estrada, Urdesa, Guayaquil</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary" data-icon="schedule">schedule</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-primary mb-1">Horarios</p>
+<p class="font-body-md text-body-md">Mar - Sáb: 12:00 PM - 11:00 PM<br/>Dom: 12:00 PM - 5:00 PM</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary" data-icon="contact_support">contact_support</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-primary mb-1">Síguenos y Pide</p>
+<div class="flex flex-wrap gap-4 mt-2">
+<a class="flex items-center gap-2 font-label-md text-label-md text-on-surface hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="photo_camera">photo_camera</span> @mesonandaluzgye
+                                    </a>
+<div class="flex gap-4">
+<span class="font-body-md text-body-md text-on-surface-variant">Uber Eats</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Rappi</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="rounded-2xl overflow-hidden shadow-2xl border-4 border-surface h-[400px]">
+<img class="w-full h-full object-cover" data-alt="A stylized map-style image of a vibrant city street in Guayaquil, focused on the Urdesa neighborhood. The image uses a warm filter to align with the terracotta and gold brand colors. The street shows palm trees and local architecture under a clear blue sky, emphasizing the welcoming and central location of the restaurant in the heart of the city." data-location="Guayaquil" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATqN3NFoGs2lZq6YW2pMJtYdVkjxj2RUhFI1gSoaTdV9XIS97cCwLDGxU4AVf6avd1cuce0teUfJK37Nr9vMjlhgabctFi20_6kqCo6lLKemuGJBAoHeeOS0KNqZPcnwf9P0v-gb0zOos1ifU6DJdtxLZvngF-n2Ktf7JHn_YtogA5BHjnlPsfFLToJ61AyG4lq-XddbFQVCyHHwCoXTCfEIFM8_I9vObpYr-PlV2qDzWJev6kG6CR8Y4WxISrbrmMbWoo5VdWkOo"/>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-24 bg-inverse-surface text-on-primary-container relative overflow-hidden">
+<div class="absolute inset-0 opacity-10">
+<div class="absolute top-0 left-0 w-96 h-96 bg-primary rounded-full blur-[120px]"></div>
+<div class="absolute bottom-0 right-0 w-96 h-96 bg-secondary rounded-full blur-[120px]"></div>
+</div>
+<div class="max-w-4xl mx-auto px-margin-mobile text-center relative z-10">
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-8">¿Listo para vivir la experiencia española?</h2>
+<p class="font-body-lg text-body-lg text-on-tertiary-container/80 mb-12">No dejes que te lo cuenten, ven y descubre por qué somos el referente de la cocina española en Guayaquil.</p>
+
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 bg-surface-container-highest border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="space-y-4">
+<span class="font-headline-sm text-headline-sm text-primary">Mesón Andaluz</span>
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 Mesón Andaluz. Sabores de España en Guayaquil. Todos los derechos reservados.</p>
+</div>
+<div class="flex flex-col gap-3">
+<h5 class="font-label-md text-label-md text-on-surface uppercase mb-2">Navegación</h5>
+<a class="text-on-surface-variant hover:underline decoration-secondary underline-offset-4 font-body-md text-body-md transition-colors" href="#">Menú</a>
+<a class="text-on-surface-variant hover:underline decoration-secondary underline-offset-4 font-body-md text-body-md transition-colors" href="#">Reservas</a>
+<a class="text-on-surface-variant hover:underline decoration-secondary underline-offset-4 font-body-md text-body-md transition-colors" href="#">Nosotros</a>
+</div>
+<div class="flex flex-col gap-3">
+<h5 class="font-label-md text-label-md text-on-surface uppercase mb-2">Social</h5>
+<a class="text-on-surface-variant hover:underline decoration-secondary underline-offset-4 font-body-md text-body-md transition-colors" href="#">Instagram</a>
+<a class="text-on-surface-variant hover:underline decoration-secondary underline-offset-4 font-body-md text-body-md transition-colors" href="#">Facebook</a>
+<a class="text-on-surface-variant hover:underline decoration-secondary underline-offset-4 font-body-md text-body-md transition-colors" href="#">Ubicación</a>
+</div>
+</div>
+</footer>
+<!-- FAB for quick action -->
+<a href="https://wa.me/593939206691?text=Hola%2C%20quiero%20hacer%20una%20reserva%20en%20Mes%C3%B3n%20Andaluz%20%F0%9F%8D%BD%EF%B8%8F" target="_blank" class="fixed bottom-8 right-8 w-16 h-16 bg-primary text-on-primary rounded-full shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all z-50 group">
+<span class="material-symbols-outlined text-3xl" data-icon="book_online">book_online</span>
+<span class="absolute right-full mr-4 bg-surface px-4 py-2 rounded-lg text-primary font-label-md text-label-md shadow-lg opacity-0 group-hover:opacity-100 whitespace-nowrap pointer-events-none transition-opacity">Reserva Aquí</span>
+</a>
+</body></html>
